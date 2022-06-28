@@ -43,7 +43,7 @@ export = createRule({
                 context.report({ messageId: "secondArgumentDebugAssertError", node: message1Node });
             }
 
-            if (argsLen < 3) {
+            if (argsLen < 3 || argsLen > 3) {
                 return;
             }
 

@@ -3970,6 +3970,7 @@ namespace ts.Completions {
     function isClassMemberCompletionKeyword(kind: SyntaxKind) {
         switch (kind) {
             case SyntaxKind.AbstractKeyword:
+            case SyntaxKind.AccessorKeyword:
             case SyntaxKind.ConstructorKeyword:
             case SyntaxKind.GetKeyword:
             case SyntaxKind.SetKeyword:
